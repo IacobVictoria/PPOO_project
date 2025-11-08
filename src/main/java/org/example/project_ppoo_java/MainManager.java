@@ -71,7 +71,7 @@ public class MainManager {
 
         File directory = new File(path);
         if (!directory.exists() || !directory.isDirectory()) {
-            throw new InvalidDirectoryException("Directory does not exist with psth " + path);
+            throw new InvalidDirectoryException("Directory does not exist with path " + path);
         }
 
         DirectoryLocation newLoc = new DirectoryLocation(path);
@@ -186,6 +186,25 @@ public class MainManager {
 
     public List<MediaFile> getMediaFiles() {
         return new ArrayList<>(mediaFiles);
+    }
+
+    /**
+     * Get media files per directory
+     * @param directory
+     * @return
+     */
+    public List<MediaFile> getMediaFilesForDirectory(DirectoryLocation directory) {
+        List<MediaFile> result = new ArrayList<>();
+        if (directory == null) {
+            return result;
+        }
+        for (MediaFile file : mediaFiles) {
+            if (file.getDirectory() != null &&
+                    file.getDirectory().getPath().equals(directory.getPath())) {
+                result.add(file);
+            }
+        }
+        return result;
     }
 
 }
