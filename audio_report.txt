@@ -1,0 +1,9 @@
+Report generated at: 2025-11-09 19:03:23
+Report per type AUDIO
+Total files of this type: 1
+
+Size by directory in bytes:
+Directory "C:\Users\Victoria\Desktop\PPOO" contains a total of 362788 bytes for this media type.
+
+Files of type AUDIO:
+C:\Users\Victoria\Desktop\PPOO/sunflower-street-drumloop-85bpm-163900.wav (362788 bytes)

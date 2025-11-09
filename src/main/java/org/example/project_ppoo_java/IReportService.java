@@ -31,4 +31,11 @@ public interface IReportService {
                                 int[] countByType,
                                 int[][] sizeByLocationAndType,
                                 List<DirectoryLocation> directories);
+
+    /**
+     * Save report content to filePath
+     * @param content
+     * @param filePath
+     */
+   void saveReportToFile(String content, String filePath);
 }

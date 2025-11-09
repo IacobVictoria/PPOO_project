@@ -1,0 +1,8 @@
+Report generated at: 2025-11-09 19:02:45
+Final Report
+Total media files: 3
+Audio files: 1
+Image files: 2
+
+Size by directory and type in bytes:
+In directory "C:\Users\Victoria\Desktop\PPOO", a total of 362788 bytes of AUDIO files and 4476115 bytes of IMAGE files were found.

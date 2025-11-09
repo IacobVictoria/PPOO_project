@@ -58,25 +58,29 @@ public class HelloApplication extends Application {
 
         btnTotalReport.setOnAction(e -> {
             manager.scanAll();
-            System.out.println("----------      TOTAL REPORT    -------------");
-            System.out.println(manager.getSummaryReport());
+//            System.out.println("----------      TOTAL REPORT    -------------");
+//            System.out.println(manager.getSummaryReport());
+            manager.saveSummaryReportToFile("total_report.txt");
         });
         btnTotalReport.setStyle("-fx-background-color: #2196F3; -fx-text-fill: white;");
 
 
         btnImageReport.setOnAction(e -> {
             manager.scanAll();
-            System.out.println("----------------    IMAGE REPORT        --------------------------");
-            System.out.println(manager.getTypeReport(MediaType.IMAGE));
+//            System.out.println("----------------    IMAGE REPORT        --------------------------");
+//            System.out.println(manager.getTypeReport(MediaType.IMAGE));
+            manager.saveTypeReportToFile(MediaType.IMAGE, "image_report.txt");
         });
         btnImageReport.setStyle("-fx-background-color: #9C27B0; -fx-text-fill: white;");
 
 
         btnAudioReport.setOnAction(e -> {
             manager.scanAll();
-            System.out.println("------------------   AUDIO REPORT   ---------------");
-            System.out.println(manager.getTypeReport(MediaType.AUDIO));
+//            System.out.println("------------------   AUDIO REPORT   ---------------");
+//            System.out.println(manager.getTypeReport(MediaType.AUDIO));
+            manager.saveTypeReportToFile(MediaType.AUDIO, "audio_report.txt");
         });
+        btnAudioReport.setStyle("-fx-background-color: #4CAF50; -fx-text-fill: white;");
 
     }
 

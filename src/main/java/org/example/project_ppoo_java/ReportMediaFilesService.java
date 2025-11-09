@@ -1,11 +1,21 @@
 package org.example.project_ppoo_java;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class ReportMediaFilesService implements IReportService {
 
+    private static final DateTimeFormatter REPORT_DATE_FORMATTER =
+            DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
+
     /**
      * Report of the entire AUDIO and IMAGE aria of files
+     *
      * @param files
      * @param countByType
      * @param sizeByLocationAndType
@@ -19,7 +29,11 @@ public class ReportMediaFilesService implements IReportService {
                                         List<DirectoryLocation> directories) {
 
         StringBuilder sb = new StringBuilder();
-        sb.append("Final Report \n");
+        sb.append("Report generated at: ")
+                .append(LocalDateTime.now().format(REPORT_DATE_FORMATTER))
+                .append(System.lineSeparator());
+
+        sb.append("Final Report").append(System.lineSeparator());
 
 
         sb.append("Total media files: ").append(files.size()).append("\n");
@@ -56,6 +70,7 @@ public class ReportMediaFilesService implements IReportService {
 
     /**
      * Generate report per type of media file : AUDIO OR IMAGE
+     *
      * @param files
      * @param type
      * @param countByType
@@ -71,7 +86,11 @@ public class ReportMediaFilesService implements IReportService {
                                        List<DirectoryLocation> directories) {
 
         StringBuilder sb = new StringBuilder();
-        sb.append("Report per type").append(type).append("\n");
+        sb.append("Report generated at: ")
+                .append(LocalDateTime.now().format(REPORT_DATE_FORMATTER))
+                .append(System.lineSeparator());
+
+        sb.append("Report per type ").append(type).append(System.lineSeparator());
 
 
         int index = -1;
@@ -127,5 +146,14 @@ public class ReportMediaFilesService implements IReportService {
         }
 
         return sb.toString();
+    }
+
+    public void saveReportToFile(String content, String filePath) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+            writer.write(content);
+        } catch (IOException e) {
+            System.out.println("Could not save the report to file");
+        }
+
     }
 }

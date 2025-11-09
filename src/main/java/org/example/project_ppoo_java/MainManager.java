@@ -168,7 +168,6 @@ public class MainManager {
 
     /**
      * Summary Reports
-     *
      */
 
     public String getSummaryReport() {
@@ -179,6 +178,31 @@ public class MainManager {
         return reportService.generateByTypeReport(mediaFiles, type, countByType, sizeByLocationAndType, new ArrayList<>(directorySet));
     }
 
+    /**
+     * Save final report to file
+     *
+     * @param filePath
+     */
+    public void saveSummaryReportToFile(String filePath) {
+        String report = getSummaryReport();
+
+        reportService.saveReportToFile(report, filePath);
+        logService.logMessage("Saved summary report to: " + filePath);
+    }
+
+    /**
+     * Save report type to file
+     *
+     * @param type
+     * @param filePath
+     */
+    public void saveTypeReportToFile(MediaType type, String filePath) {
+        String report = getTypeReport(type);
+
+        reportService.saveReportToFile(report, filePath);
+        logService.logMessage("Saved " + type + " report to: " + filePath);
+
+    }
 
     public List<DirectoryLocation> getDirectories() {
         return new ArrayList<>(directorySet);
@@ -190,6 +214,7 @@ public class MainManager {
 
     /**
      * Get media files per directory
+     *
      * @param directory
      * @return
      */
