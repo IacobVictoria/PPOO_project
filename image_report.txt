@@ -1,0 +1,10 @@
+Report generated at: 2025-11-15 10:49:49
+Report per type IMAGE
+Total files of this type: 2
+
+Size by directory in bytes:
+Directory "C:\Users\Victoria\Desktop\PPOO" contains a total of 4476115 bytes for this media type.
+
+Files of type IMAGE:
+C:\Users\Victoria\Desktop\PPOO/DIAGRAMA FINALA PPOO.png (412253 bytes)
+C:\Users\Victoria\Desktop\PPOO/pic1.jpg (4063862 bytes)

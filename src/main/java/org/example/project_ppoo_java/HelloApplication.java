@@ -80,7 +80,6 @@ public class HelloApplication extends Application {
 //            System.out.println(manager.getTypeReport(MediaType.AUDIO));
             manager.saveTypeReportToFile(MediaType.AUDIO, "audio_report.txt");
         });
-        btnAudioReport.setStyle("-fx-background-color: #4CAF50; -fx-text-fill: white;");
 
     }
 

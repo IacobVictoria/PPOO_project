@@ -64,7 +64,6 @@ public class MainFileStorage implements IFileStorage {
      */
     @Override
     public void saveDirectories(Set<DirectoryLocation> directories) {
-        //false ca sa pot sa golesc si supracriu
         try (PrintWriter printwriter = new PrintWriter(new FileWriter(file, false))) {
             for (DirectoryLocation directory : directories) {
                 printwriter.println(directory.getPath());

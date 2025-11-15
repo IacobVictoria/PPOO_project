@@ -7,10 +7,16 @@
     <list default="true" id="112fe07f-22bc-4d60-a63c-5300842c84d0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/audio_report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/IReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/IReportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/IMediaFileFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/IMediaFileFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/MainFileStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/MainFileStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/MainManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/MainManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/ReportMediaFilesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/ReportMediaFilesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/MediaFileFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/MediaFileFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/ScanMediaFilesDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ppoo_java/ScanMediaFilesDirectory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ppoo_java/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ppoo_java/HelloApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ppoo_java/MainFileStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ppoo_java/MainFileStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/total_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/total_report.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +54,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Victoria/Desktop/PPOO/PPOO_project&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Victoria/Desktop/PPOO/PPOO_project&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
 }</component>
   <component name="RecentsManager">

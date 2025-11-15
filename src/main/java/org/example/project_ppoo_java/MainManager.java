@@ -41,7 +41,7 @@ public class MainManager {
     }
 
     /**
-     * 1. Se incarca directoarele deja existente in aplicatie din fisierul "location.txt"
+     * 1. Save all the directories from app in file "location.txt"
      */
     public void loadDirectories() {
         directorySet.clear();
@@ -51,7 +51,7 @@ public class MainManager {
     }
 
     /**
-     * 2. Se salveaza la final in fisier toate directoarele
+     * 2. Save when closing the app all the directories in the final file
      */
     public void saveDirectories() {
         fileStorage.saveDirectories(directorySet);

@@ -12,9 +12,9 @@ public class MediaFileFactory implements IMediaFileFactory {
      * @throws UnsupportedExtensionException
      */
     @Override
-    public MediaFile createFile(String path, DirectoryLocation directory) throws UnsupportedExtensionException {
+    public MediaFile createFile(String path, DirectoryLocation directory) throws UnsupportedExtensionException, InvalidDirectoryException {
         if (path == null || directory == null) {
-            throw new UnsupportedExtensionException("Path or directory is null");
+            throw new InvalidDirectoryException("Path or directory is null");
         }
 
         String lower = path.toLowerCase();

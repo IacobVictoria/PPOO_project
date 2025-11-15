@@ -64,7 +64,7 @@ public class ScanMediaFilesDirectory implements IScanFilesDirectory {
                         result.add(media);
                         logService.logMessage("Media added: " + file.getAbsolutePath());
                     }
-                } catch (UnsupportedExtensionException e) {
+                } catch (UnsupportedExtensionException | InvalidDirectoryException e) {
                     logService.logMessage("Unsupported file: " + file.getAbsolutePath());
                 }
             }

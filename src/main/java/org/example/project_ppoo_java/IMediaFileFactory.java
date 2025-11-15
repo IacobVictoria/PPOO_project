@@ -9,5 +9,5 @@ public interface IMediaFileFactory {
      * @return
      * @throws UnsupportedExtensionException
      */
-    MediaFile createFile(String path, DirectoryLocation directory) throws UnsupportedExtensionException;
+    MediaFile createFile(String path, DirectoryLocation directory) throws UnsupportedExtensionException, InvalidDirectoryException;
 }
